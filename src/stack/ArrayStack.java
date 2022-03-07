@@ -31,6 +31,7 @@ public class ArrayStack<T> implements Stack<T> {
         if (isEmpty()) {
             throw new StackUnderflowException();
         }
+        storage[topIndex] = null;
         topIndex = topIndex - 1;
     }
     
